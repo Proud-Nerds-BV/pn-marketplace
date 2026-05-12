@@ -1,0 +1,19 @@
+{
+  "name": "pn-workflow",
+  "description": "Proud Nerds workflow plugin: 19 pn_* skills + 7 cross-platform Node hooks that orchestrate the full PO/DEV/QA handoff lifecycle across Jira and the git repo (idea -> refine -> estimate -> approval -> todo -> progress -> review -> handover -> deploy -> release).",
+  "author": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "homepage": "https://bitbucket.org/pn-wordpress/proud-nerds-company-wide-skillset",
+  "license": "UNLICENSED",
+  "keywords": [
+    "proud-nerds",
+    "jira",
+    "workflow",
+    "lifecycle",
+    "tdd",
+    "pn"
+  ],
+  "version": "0.4.2"
+}

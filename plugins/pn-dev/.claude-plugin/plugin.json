@@ -1,0 +1,18 @@
+{
+  "name": "pn-dev",
+  "description": "Proud Nerds developer plugin: skills for the implementation phase of the PN lifecycle (TDD-driven progress, module architecture audits, docs updates) with the hooks that enforce test-first discipline and ADR capture on code edits. Pairs with pn-core; intended for in-progress feature/bugfix branches.",
+  "author": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "homepage": "https://bitbucket.org/pn-wordpress/proud-nerds-company-wide-skillset",
+  "license": "UNLICENSED",
+  "keywords": [
+    "proud-nerds",
+    "pn",
+    "developer",
+    "tdd",
+    "implementation"
+  ],
+  "version": "0.4.2"
+}

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "project": {
+    "name": "<REPO_NAME>",
+    "key": "<SHORT_PROJECT_SLUG>",
+    "jira_project_key": "<ABC>",
+    "framework": "<laravel|typo3|wordpress|node|unknown>"
+  },
+  "language": {
+    "output": "en",
+    "jira": "en"
+  },
+  "jira": {
+    "cloud_id": "<CLOUD_ID>",
+    "custom_fields": {
+      "pn_phase": {
+        "id": "customfield_12294",
+        "type": "single-select",
+        "allowed_values": [
+          "new",
+          "refine",
+          "estimate",
+          "approval",
+          "todo",
+          "progress",
+          "review",
+          "handover",
+          "deploy",
+          "release-ready",
+          "released"
+        ]
+      },
+      "pn_actor": {
+        "id": "customfield_12295",
+        "type": "single-select",
+        "allowed_values": ["AI", "Human", "Joint"]
+      },
+      "acceptance_criteria": {
+        "id": "customfield_12288",
+        "type": "multi-line-text"
+      },
+      "expected_scope": {
+        "id": "customfield_12289",
+        "type": "multi-line-text"
+      },
+      "validation_passed": {
+        "id": "customfield_12293",
+        "type": "single-select",
+        "allowed_values": ["Yes", "No"]
+      },
+      "handover_passed": {
+        "id": "customfield_12292",
+        "type": "single-select",
+        "allowed_values": ["Yes", "No"]
+      }
+    }
+  },
+  "workflow": {
+    "divergent": "unknown",
+    "statuses_expected": [
+      "To Do",
+      "In Progress",
+      "In Review",
+      "Waiting for customer",
+      "Waiting for third party",
+      "Done"
+    ],
+    "statuses_observed": []
+  },
+  "pr": {
+    "platform": "<bitbucket|github|azure-devops>"
+  },
+  "hooks": {
+    "enabled": true,
+    "mode": "warn"
+  },
+  "code_knowledge": {
+    "path": ".pn/index/"
+  },
+  "tests": {
+    "runner": "",
+    "directory": "tests/",
+    "patterns": ["*Test.php", "*.test.ts", "*.test.js", "*.spec.ts", "*.spec.js"]
+  },
+  "release": {
+    "version_location": "release-issue"
+  }
+}

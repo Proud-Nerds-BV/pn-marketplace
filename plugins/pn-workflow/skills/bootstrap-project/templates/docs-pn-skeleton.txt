@@ -1,0 +1,14 @@
+# Directories to create under docs/pn/ during bootstrap.
+# One directory per line. Each gets a .gitkeep so it ships in git.
+# Lines beginning with # are comments and ignored.
+
+ideas
+context-packs
+prd
+validations
+plans
+adrs
+stories
+findings
+audits
+releases

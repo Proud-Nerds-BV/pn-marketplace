@@ -1,0 +1,18 @@
+{
+  "name": "pn-po",
+  "description": "Proud Nerds Product Owner plugin: skills for the discovery, refinement, and estimation phases of the PN lifecycle (capture idea, draft epic, grill requirements, write PRD, check ticket, plan phases, capture context, ubiquitous language). Pairs with pn-core; intended for PO/refinement-heavy sessions without the DEV/QA toolchain.",
+  "author": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "homepage": "https://bitbucket.org/pn-wordpress/proud-nerds-company-wide-skillset",
+  "license": "UNLICENSED",
+  "keywords": [
+    "proud-nerds",
+    "pn",
+    "product-owner",
+    "refinement",
+    "jira"
+  ],
+  "version": "0.4.2"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "pn-plugins",
+  "owner": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "plugins": [
+    {
+      "name": "pn-dev",
+      "source": "./plugins/pn-dev",
+      "version": "0.4.2",
+      "description": "Proud Nerds developer plugin: skills for the implementation phase of the PN lifecycle (TDD-driven progress, module architecture audits, docs updates) with the hooks that enforce test-first discipline and ADR capture on code edits. Pairs with pn-core; intended for in-progress feature/bugfix branches."
+    },
+    {
+      "name": "pn-po",
+      "source": "./plugins/pn-po",
+      "version": "0.4.2",
+      "description": "Proud Nerds Product Owner plugin: skills for the discovery, refinement, and estimation phases of the PN lifecycle (capture idea, draft epic, grill requirements, write PRD, check ticket, plan phases, capture context, ubiquitous language). Pairs with pn-core; intended for PO/refinement-heavy sessions without the DEV/QA toolchain."
+    },
+    {
+      "name": "pn-qa",
+      "source": "./plugins/pn-qa",
+      "version": "0.4.2",
+      "description": "Proud Nerds QA plugin: skills for the review phase of the PN lifecycle (PR review, code evaluation, security audit) with the hooks that block raw-search shortcuts and enforce up-to-date file summaries before edits. Pairs with pn-core; intended for review/audit sessions."
+    },
+    {
+      "name": "pn-release",
+      "source": "./plugins/pn-release",
+      "version": "0.4.2",
+      "description": "Proud Nerds release plugin: skills for the handover and release-readiness phases of the PN lifecycle (handover gate, Dutch release notes, release readiness gate). Pairs with pn-core; intended for release coordinators preparing a tag or hand-off to the PO."
+    },
+    {
+      "name": "pn-workflow",
+      "source": "./plugins/pn-workflow",
+      "version": "0.4.2",
+      "description": "Proud Nerds workflow plugin: 19 pn_* skills + 7 cross-platform Node hooks that orchestrate the full PO/DEV/QA handoff lifecycle across Jira and the git repo (idea -> refine -> estimate -> approval -> todo -> progress -> review -> handover -> deploy -> release)."
+    }
+  ]
+}

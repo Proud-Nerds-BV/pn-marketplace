@@ -1,0 +1,59 @@
+---
+title: Onboarding voor de Product Owner (Claude Desktop)
+project: <PROJECT_NAME>
+language: nl
+author: <GIT_USER_NAME>
+generated_by: pn_bootstrap-project
+template_version: 1
+---
+
+# Onboarding voor de Product Owner
+
+Welkom. Deze checklist helpt je om binnen Claude Desktop met dezelfde repository te werken die het DEV-team gebruikt. Je hoeft de bootstrap niet zelf te draaien; die is al uitgevoerd.
+
+## 1. Repository openen in Claude Desktop
+
+1. Open Claude Desktop.
+2. Ga naar het tabblad **Code**.
+3. Voeg deze repository toe via **Add project** en wijs naar de lokale checkout (`<PROJECT_PATH>`).
+4. Controleer dat Claude Desktop de directory ziet door in de chat te vragen: "lijst de map `docs/pn/`".
+
+## 2. MCP-servers controleren
+
+In Claude Desktop staan de relevante MCP-servers (Atlassian, eventueel Bitbucket of GitHub) los van die in Claude Code. Open **Settings -> Developer -> MCP** en bevestig:
+
+- `atlassian` staat aan en is geauthenticeerd op de Proud Nerds Jira-instance.
+- Geen oude pn-helper-servers actief; alleen Atlassian is verplicht voor jou als PO.
+
+Als de Atlassian-server niet werkt, kun je geen Jira-acties doen. Meld dit bij de TL; het is geen actie voor jou.
+
+## 3. Belangrijke documenten in deze repo
+
+- `docs/pn/prd/` bevat de PRD's per epic. Lees deze voordat je beslist.
+- `docs/pn/plans/` bevat de architectuur- en planningsdocumenten.
+- `docs/pn/context-packs/` bevat de domeincontext per epic.
+- `UBIQUITOUS_LANGUAGE.md` (repo-root) is de gedeelde woordenlijst; gebruik deze termen consistent.
+- `docs/pn/releases/<VERSION>/notes.md` zijn de release notes (Nederlands).
+
+## 4. Skills die je zelf kunt draaien
+
+Twee `pn_*` skills zijn voor jou bedoeld:
+
+- `/pn_new-capture-idea` - schrijf een nieuw idee op als een markdownbestand in `docs/pn/ideas/`. Nog geen Jira-actie; alleen vastleggen.
+- `/pn_estimate-write-prd` - werk samen met de TL aan de PRD voor een goedgekeurd epic.
+
+Skills die transities maken (handover, release readiness, dev-cycle) zijn voor DEV/QA; je hoeft die niet aan te roepen.
+
+## 5. Wat je niet hoeft te doen
+
+- Geen Jira-werkflow aanpassen. De skill-set werkt tegen de gedeelde PN-werkflow met zes statussen.
+- Geen custom fields aanmaken. Die zijn al globaal beschikbaar (`PN Phase`, `PN Actor`, `Acceptance Criteria`, `Expected Scope`, `Validation Passed`, `Handover Passed`).
+- Geen handmatige Jira-overgangen tijdens een lopende skill-run. Wacht op de verdict-comment.
+
+## 6. Hulp en escalatie
+
+Bij twijfel of bij een fout-melding van een skill: vraag de TL om te kijken in `.pn/settings.json` en het lokale `.pn/journal/<DATUM>.md` op de machine van de DEV. Daar staan de meeste antwoorden al.
+
+---
+
+*Gegenereerd door `pn_bootstrap-project`. Auteur: <GIT_USER_NAME>.*

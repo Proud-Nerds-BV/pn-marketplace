@@ -1,0 +1,18 @@
+{
+  "name": "pn-qa",
+  "description": "Proud Nerds QA plugin: skills for the review phase of the PN lifecycle (PR review, code evaluation, security audit) with the hooks that block raw-search shortcuts and enforce up-to-date file summaries before edits. Pairs with pn-core; intended for review/audit sessions.",
+  "author": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "homepage": "https://bitbucket.org/pn-wordpress/proud-nerds-company-wide-skillset",
+  "license": "UNLICENSED",
+  "keywords": [
+    "proud-nerds",
+    "pn",
+    "qa",
+    "review",
+    "security"
+  ],
+  "version": "0.4.2"
+}

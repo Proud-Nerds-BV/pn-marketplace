@@ -1,0 +1,17 @@
+{
+  "name": "pn-release",
+  "description": "Proud Nerds release plugin: skills for the handover and release-readiness phases of the PN lifecycle (handover gate, Dutch release notes, release readiness gate). Pairs with pn-core; intended for release coordinators preparing a tag or hand-off to the PO.",
+  "author": {
+    "name": "Proud Nerds",
+    "email": "bas.dekort@proudnerds.com"
+  },
+  "homepage": "https://bitbucket.org/pn-wordpress/proud-nerds-company-wide-skillset",
+  "license": "UNLICENSED",
+  "keywords": [
+    "proud-nerds",
+    "pn",
+    "release",
+    "handover"
+  ],
+  "version": "0.4.2"
+}

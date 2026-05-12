@@ -1,0 +1,11 @@
+# Gitignore inside the .pn/ namespace.
+# Bootstrap copies this file to .pn/.gitignore on first run.
+# Intent: commit .pn/settings.json (project config); ignore everything generated.
+
+index/
+journal/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+.cache/
